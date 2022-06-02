@@ -1,0 +1,10 @@
+Body	{ color: #000000;  margin:0; }
+A:link	{ color: #FFFFFF; }
+A:visited	{ color: #FFBF00; }
+P { text-align: justify; }
+A:link.text { color: #820000; }
+A:visited.text { color: #001856; }
+
+.text8 { color: #FFBF00; font: 8pt "Tahoma", "Arial", "Helvetica", "Times"; }
+.text8_black { color: #000000; font: 8pt "Tahoma", "Arial", "Helvetica", "Times"; }
+.text8_white { color: #FFFFFF; font: 8pt "Tahoma", "Arial", "Helvetica", "Times"; }
