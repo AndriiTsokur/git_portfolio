@@ -1,13 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="author" content="Andrii Tsokur" />
-		<title>Andrii Tsokur</title>
-	</head>
-	<body>
-		<h1>Andrii Tsokur</h1>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="Andrii Tsokur" />
+	<meta name="description"
+		content="Personal website of Andrii Tsokur, Full-Stack Developer. Contains brief info about Andrii's professional activities, includes CV and his most important skills." />
+	<meta name="robots" content="index, follow" />
+	<title>Andrii Tsokur :: Full-Stack Developer :: Main Page</title>
+
+	<!-- External Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+	<!-- External Modern Normalize -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+	<!-- Internal Styles -->
+	<link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<aside class="general-info" aria-label="General information about the site owner">
+			<section class="social">
+				<img class="social__photo" src="./assets/img/homepage/tsokur__photo-small.png" srcset="
+							./assets/img/homepage/tsokur__photo-small.png    1x,
+							./assets/img/homepage/tsokur__photo-small@2x.png 2x
+						" width="150" height="150" alt="Thumbnail photo of the site owner" />
+
+				<h2 class="social__title">Andrii Tsokur</h2>
+				<p class="social__subtitle">Full-Stack Developer</p>
+
+				<ul class="social__list" aria-label="List of links to contact the site owner">
+					<li class="social__item">
+						<a class="social__link" href="tel:+380950892411" aria-label="Call cellphone">
+							<svg class="social__icon" width="16" height="16">
+								<use href="./assets/img/sprite.svg#icon-mobile2"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="mailto:tsokur@gmail.com" aria-label="Send email">
+							<svg class="social__icon" width="16" height="16">
+								<use href="./assets/img/sprite.svg#icon-email"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="skype:andrey.tsokur?chat" target="_blank" rel="nofollow noopener noreferrer"
+							aria-label="Chat by Skype">
+							<svg class="social__icon" width="16" height="16">
+								<use href="./assets/img/sprite.svg#icon-skype"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="https://wa.me/380950892411" target="_blank" rel="nofollow noopener noreferrer"
+							aria-label="Chat by WhatsApp">
+							<svg class="social__icon" width="16" height="16">
+								<use href="./assets/img/sprite.svg#icon-whatsapp"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="https://t.me/andrii_tsokur" target="_blank" rel="nofollow noopener noreferrer"
+							aria-label="Chat by Telegram">
+							<svg class="social__icon" width="20" height="20">
+								<use href="./assets/img/sprite.svg#icon-telegram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="https://www.linkedin.com/in/andrii-tsokur/" target="_blank"
+							rel="nofollow noopener noreferrer" aria-label="Visit LinkedIn profile">
+							<svg class="social__icon" width="16" height="16">
+								<use href="./assets/img/sprite.svg#icon-linkedin"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="https://github.com/AndriiTsokur" target="_blank"
+							rel="nofollow noopener noreferrer" aria-label="Visit GitHub profile">
+							<svg class="social__icon" width="20" height="20">
+								<use href="./assets/img/sprite.svg#icon-github"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="brief">
+				<ul class="brief__list">
+					<li class="brief__item">
+						<p class="brief__name">Age:</p>
+						<p class="brief__value">50</p>
+					</li>
+					<li class="brief__item">
+						<p class="brief__name">Residence:</p>
+						<p class="brief__value">Odesa, Ukraine</p>
+					</li>
+					<li class="brief__item">
+						<p class="brief__name">Status:</p>
+						<p class="brief__value--accent">Open for a new job</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="skills">
+				<h2 class="skills__title">Languages</h2>
+				<ul class="skills__list">
+					<li class="skills__item">
+						<p class="skills__name">Ukrainian</p>
+						<p class="skills__value">Native</p>
+						<div class="skills__level skills__level--fluent"></div>
+					</li>
+					<li class="skills__item">
+						<p class="skills__name">Russian</p>
+						<p class="skills__value">Fluent</p>
+						<div class="skills__level skills__level--fluent"></div>
+					</li>
+					<li class="skills__item">
+						<p class="skills__name">English</p>
+						<p class="skills__value">B2</p>
+						<div class="skills__level skills__level--b2"></div>
+					</li>
+					<li class="skills__item">
+						<p class="skills__name">Polish</p>
+						<p class="skills__value">A2</p>
+						<div class="skills__level skills__level--a2"></div>
+					</li>
+				</ul>
+			</section>
+
+			<section class="skills">
+				<h2 class="skills__title">
+					Hard Skills
+				</h2>
+				<ul class="skills__list">
+					<li class="skills__item skills__item--rank">
+						<p class="skills__name skills__name--rank">HTML</p>
+						<ul class="skills__rank" aria-label="Advanced">
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="skills__item skills__item--rank">
+						<p class="skills__name skills__name--rank">CSS</p>
+						<ul class="skills__rank" aria-label="Advanced">
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="skills__item skills__item--rank">
+						<p class="skills__name skills__name--rank">JavaScript</p>
+						<ul class="skills__rank" aria-label="Intermediate">
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="skills__item skills__item--rank">
+						<p class="skills__name skills__name--rank">ReactJS</p>
+						<ul class="skills__rank" aria-label="Novice">
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="skills__item skills__item--rank">
+						<p class="skills__name skills__name--rank">React Native</p>
+						<ul class="skills__rank" aria-label="Basic knowledge">
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="skills__item skills__item--rank">
+						<p class="skills__name skills__name--rank">Python</p>
+						<ul class="skills__rank" aria-label="Basic knowledge">
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="skills__item skills__item--rank">
+						<p class="skills__name skills__name--rank">Node.js</p>
+						<ul class="skills__rank" aria-label="Not applicable">
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="skills__item skills__item--rank">
+						<p class="skills__name skills__name--rank">MongoDB</p>
+						<ul class="skills__rank" aria-label="Not applicable">
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+							<li>
+								<svg class="skills__star skills__star--empty">
+									<use href="./assets/img/sprite.svg#icon-star"></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section class="skills">
+				<h2 class="skills__title">Extra Skills</h2>
+				<ul class="skills__list">
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Sass / SCSS</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Git / GitHub</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Bootstrap</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Figma</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Adobe Photoshop</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Adobe Illustrator</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="skills">
+				<h2 class="skills__title">Soft Skills</h2>
+				<ul class="skills__list">
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Scrum</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Team Player</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Problem Solving</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Analytics</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Communication & Listening</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Presentation</p>
+					</li>
+					<li class="skills__item skills__item--extra">
+						<svg class="skills__icon">
+							<use href="./assets/img/sprite.svg#icon-copy"></use>
+						</svg>
+						<p class="skills__name skills__name--rank">Leadership</p>
+					</li>
+				</ul>
+			</section>
+
+			<a class="get-cv" href="#" download="">
+				Download CV
+				<svg class="get-cv__icon">
+					<use href="./assets/img/sprite.svg#icon-download"></use>
+				</svg>
+			</a>
+		</aside>
+
+		<main class="main">
+			<section class="hero">
+				<div class="hero__wrapper">
+					<h1 class="hero__title">Hi! I’m Andrii Tsokur<br><span class="hero__title--selection">Full-Stack</span> <span
+							class="hero__title--accent">Developer</span></h1>
+					<p class="hero__subtitle">
+						After almost 20 years of my last prehistoric coding experience and continued success in local and export
+						FMCG sales,
+						under the influence of the Russian military invasion of Ukraine, I decided to switch back to the IT
+						business</p>
+					<p class="hero__subtitle">Now I'm completing my 10-month Full Stack Developer training and hope for your
+						worthy appreciation of my efforts to get
+						my first dream job in my new role
+					</p>
+					<a class="hero__link" href="mailto:tsokur@gmail.com?subject=Preliminary Job Offer">HIRE ME
+						<svg class="hero__icon">
+							<use href="./assets/img/sprite.svg#arrow-right"></use>
+						</svg>
+					</a>
+				</div>
+
+				<img class="hero__photo" src="./assets/img/homepage/tsokur__photo-large.png" srcset="
+							./assets/img/homepage/tsokur__photo-large.png    1x,
+							./assets/img/homepage/tsokur__photo-large@2x.png 2x
+						" width="292" height="449" alt="Full photo of Andrii Tsokur" />
+			</section>
+		</main>
+
+		<aside class="wrapper-nav">
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link main-nav__link--contrast" href="#" aria-label="Select color theme">
+							<svg class="main-nav__icon main-nav__icon--contrast">
+								<use href="./assets/img/sprite.svg#icon-contrast"></use>
+							</svg></a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link main-nav__link--home main-nav__link--current" href="#"
+							area-label="To the Homepage">
+							<svg class="main-nav__icon">
+								<use href="./assets/img/sprite.svg#icon-home"></use>
+							</svg></a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link main-nav__link--education" href="#" area-label="To the Education Section">
+							<svg class="main-nav__icon">
+								<use href="./assets/img/sprite.svg#icon-education"></use>
+							</svg></a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link main-nav__link--employment" href="#"
+							area-label="To the Employment history Section">
+							<svg class="main-nav__icon">
+								<use href="./assets/img/sprite.svg#icon-work"></use>
+							</svg></a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link main-nav__link--portfolio" href="#" area-label="To the Portfolio Section">
+							<svg class="main-nav__icon">
+								<use href="./assets/img/sprite.svg#icon-portfolio"></use>
+							</svg></a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link main-nav__link--testimonials" href="#" area-label="To the Testimonials Section">
+							<svg class="main-nav__icon">
+								<use href="./assets/img/sprite.svg#icon-testimonials"></use>
+							</svg></a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+	</div>
+</body>
+
 </html>

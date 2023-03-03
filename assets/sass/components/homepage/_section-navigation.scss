@@ -1,0 +1,117 @@
+.wrapper-nav {
+	position: relative;
+	min-width: 108px;
+	height: inherit;
+
+	background-color: $BG_BLOCK;
+}
+
+.main-nav {
+	position: sticky;
+	top: 0;
+	right: 0;
+
+	width: 108px;
+	// height: 1706px;
+	padding: 52px 34px;
+
+	background-color: $BG_BLOCK;
+
+	&__item {
+		margin-bottom: 43px;
+
+		&:first-child {
+			margin-bottom: 100px;
+		}
+	}
+
+	&__link {
+		position: relative;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+
+		color: $COLOR_MAIN;
+
+		border-radius: 50%;
+		background-color: $BG_MAIN;
+
+		transition: color 250ms, background-color 250ms;
+
+		&:hover,
+		&:focus,
+		&--current {
+			color: $COLOR_ACCENT;
+			background-color: $COLOR_SELECTION;
+
+			&::before {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 110%;
+			left: -50%;
+
+			display: block;
+			width: 80px;
+			padding: 5px;
+
+			font-size: 10px;
+			font-weight: 500;
+			line-height: calc(15 / 12);
+			text-align: center;
+			color: $BG_BLOCK;
+
+			border-radius: 2px;
+			background-color: $COLOR_ACCENT;
+
+			visibility: hidden;
+			opacity: 0;
+			transition: visibility 250ms, opacity 250ms;
+		}
+
+		&--contrast::before {
+			content: 'Color Mode';
+		}
+
+		&--home::before {
+			content: 'Home Page';
+		}
+
+		&--education::before {
+			content: 'Education';
+		}
+
+		&--employment::before {
+			content: 'Employment';
+		}
+
+		&--portfolio::before {
+			content: 'Portfolio';
+		}
+
+		&--testimonials::before {
+			content: 'Testimonials';
+		}
+	}
+
+	&__icon {
+		display: block;
+		width: 18px;
+		height: 18px;
+
+		fill: currentColor;
+
+		&--contrast {
+			width: 25px;
+			height: 25px;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+%comp-section {
+	max-width: 970px;
+}
+
+%comp-subsection {
+	&__title {
+		margin-bottom: 15px;
+
+		font-size: 18px;
+		font-weight: 500;
+		line-height: calc(22 / 18);
+	}
+
+	&__separator {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		margin-top: 25px;
+
+		background-color: $COLOR_MAIN;
+		opacity: 0.3;
+	}
+}
