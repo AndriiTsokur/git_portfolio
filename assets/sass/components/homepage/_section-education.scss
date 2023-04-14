@@ -1,0 +1,51 @@
+.education {
+	@extend %comp-main-section;
+
+	&__title {
+		@extend %comp-main-section-title;
+	}
+
+	&__subtitle {
+		@extend %comp-main-section-subtitle;
+	}
+
+	&__wrapper {
+		@extend %comp-main-section-wrapper;
+	}
+
+	&__block {
+		@extend %comp-main-section-block;
+	}
+
+	&__item {
+		@extend %comp-main-section-item;
+
+		&-data {
+			@extend %comp-main-section-item-data;
+		}
+
+		&-title {
+			@extend %comp-main-section-item-title;
+		}
+
+		&-link {
+			@extend %comp-main-section-item-link;
+		}
+
+		&-subtitle {
+			@extend %comp-main-section-item-subtitle;
+		}
+
+		&-period {
+			@extend %comp-main-section-item-period;
+		}
+
+		&-description {
+			@extend %comp-main-section-item-description;
+		}
+
+		&-text:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
