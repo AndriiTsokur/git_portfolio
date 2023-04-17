@@ -491,10 +491,8 @@ ul.reset {
   margin-bottom: 50px;
 }
 .edu-n-work__list {
+  margin-block: 0 10px;
   padding-left: 20px;
-}
-.edu-n-work__list:last-of-type {
-  margin-bottom: 0;
 }
 .edu-n-work__list-item--header {
   margin-left: -20px;

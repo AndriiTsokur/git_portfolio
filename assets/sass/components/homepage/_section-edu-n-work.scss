@@ -74,11 +74,12 @@
 	}
 
 	&__list {
+		margin-block: 0 10px;
 		padding-left: 20px;
 
-		&:last-of-type {
-			margin-bottom: 0;
-		}
+		// &:last-of-type {
+		// 	margin-bottom: 0;
+		// }
 
 		&-item--header {
 			margin-left: -20px;
