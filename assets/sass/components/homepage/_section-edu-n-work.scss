@@ -1,16 +1,31 @@
-.education {
+.edu-n-work {
 	@extend %comp-main-section;
+
+	&--final {
+		margin-bottom: 0;
+	}
 
 	&__title {
 		@extend %comp-main-section-title;
+		transition: color 250ms;
 	}
 
 	&__subtitle {
 		@extend %comp-main-section-subtitle;
+
+		&--work {
+			@extend %comp-main-section-subtitle;
+			margin-bottom: 25px;
+		}
 	}
 
 	&__wrapper {
 		@extend %comp-main-section-wrapper;
+		transition: background-color 250ms;
+
+		&--final {
+			margin-bottom: 0;
+		}
 	}
 
 	&__block {
@@ -26,14 +41,17 @@
 
 		&-title {
 			@extend %comp-main-section-item-title;
+			transition: color 250ms;
 		}
 
 		&-link {
 			@extend %comp-main-section-item-link;
+			transition: color 250ms;
 		}
 
 		&-subtitle {
 			@extend %comp-main-section-item-subtitle;
+			transition: color 250ms;
 		}
 
 		&-period {
@@ -46,6 +64,26 @@
 
 		&-text:not(:last-child) {
 			margin-bottom: 10px;
+		}
+	}
+
+	&__get-cv-btn {
+		width: 225px;
+		margin-inline: auto;
+		margin-bottom: 50px;
+	}
+
+	&__list {
+		padding-left: 20px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		&-item--header {
+			margin-left: -20px;
+			font-weight: 700;
+			list-style: none;
 		}
 	}
 }

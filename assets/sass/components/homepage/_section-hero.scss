@@ -13,6 +13,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	transition: background-color 250ms;
+
 	&__wrapper {
 		// width: 495px;
 		padding-top: 25px;
@@ -26,12 +28,15 @@
 		line-height: calc(59 / 48);
 		color: $COLOR_MAIN;
 
+		transition: color 250ms;
+
 		&--selection {
 			color: $COLOR_SELECTION;
 		}
 
 		&--accent {
 			color: $COLOR_ACCENT;
+			transition: color 250ms;
 		}
 	}
 

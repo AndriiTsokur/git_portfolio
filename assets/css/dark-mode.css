@@ -1,0 +1,48 @@
+body {
+	background-color: #18191a;
+}
+
+.general-info,
+.wrapper-nav,
+.hero,
+.edu-n-work__wrapper,
+.skills__level {
+	background-color: #242526;
+}
+
+.social__title,
+.hero__title,
+.hero__title--accent {
+	color: #ffffff;
+}
+
+.brief__value,
+.skills__title,
+.skills__name,
+.skills__value,
+.edu-n-work__title,
+.edu-n-work__item-link,
+.edu-n-work__item-title,
+.edu-n-work__item-subtitle {
+	color: #fafafa;
+}
+
+.main-nav__link::before {
+	color: #2b2b2b;
+	background-color: #f0f0f6;
+}
+
+.main-nav__link--dark-mode {
+	color: #2b2b2b;
+	background-color: #ffb400;
+}
+
+.main-nav__link--dark-mode:hover,
+.main-nav__link--dark-mode:focus {
+	color: #767676;
+	background-color: #f0f0f6;
+}
+
+.main-nav__link--dark-mode::before {
+	content: 'Light Mode';
+}

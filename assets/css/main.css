@@ -14,6 +14,8 @@ body {
   line-height: 1.6;
   color: #767676;
   background-color: #f0f0f6;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
 }
 
 button {
@@ -46,37 +48,37 @@ p {
   margin-block: 0;
 }
 
-ul {
+ul.reset {
   margin-block: 0;
   padding-left: 0;
   list-style: none;
   line-height: 0;
 }
 
-.education, .hero {
+.edu-n-work, .hero {
   max-width: 970px;
   margin-bottom: 70px;
 }
-.education__title {
+.edu-n-work__title {
   margin-bottom: 25px;
   font-size: 32px;
   line-height: 1.25;
   text-align: center;
   text-transform: capitalize;
 }
-.education__subtitle {
+.edu-n-work__subtitle--work, .edu-n-work__subtitle {
   margin-bottom: 50px;
   padding-inline: 15%;
   text-align: center;
 }
-.education__wrapper {
+.edu-n-work__wrapper {
   width: 100%;
   margin-bottom: 70px;
   padding-block: 40px;
   padding-inline: 30px;
   background-color: #ffffff;
 }
-.education__block::after {
+.edu-n-work__block::after {
   content: "";
   display: block;
   width: 100%;
@@ -85,7 +87,7 @@ ul {
   background-color: #767676;
   opacity: 0.3;
 }
-.education__item {
+.edu-n-work__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,35 +95,35 @@ ul {
      -moz-column-gap: 50px;
           column-gap: 50px;
 }
-.education__item-data {
+.edu-n-work__item-data {
   min-width: 300px;
 }
-.education__item-title {
+.edu-n-work__item-title {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2222222222;
 }
-.education__item-link {
+.edu-n-work__item-link {
   -webkit-transition: color 250ms;
   transition: color 250ms;
 }
-.education__item-link:hover, .education__item-link:focus {
+.edu-n-work__item-link:hover, .edu-n-work__item-link:focus {
   color: #ffb400;
 }
-.education__item-subtitle {
+.edu-n-work__item-subtitle {
   color: #2b2b2b;
 }
-.education__item-period {
+.edu-n-work__item-period {
   display: inline-block;
   padding-block: 4px;
   padding-inline: 7px;
   font-size: 12px;
   line-height: 1;
-  color: #ffffff;
+  color: #2b2b2b;
   background-color: #ffb400;
 }
-.education__item-description {
+.edu-n-work__item-description {
   width: 100%;
 }
 
@@ -157,6 +159,8 @@ ul {
   max-width: 305px;
   padding: 50px 40px 25px;
   background-color: #ffffff;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
 }
 
 .social {
@@ -169,6 +173,8 @@ ul {
 }
 .social__title {
   text-align: center;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
 }
 .social__subtitle {
   margin-bottom: 15px;
@@ -229,6 +235,10 @@ ul {
   padding-inline: 5px;
   background-color: #ffb400;
 }
+.brief__value {
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+}
 .brief__value--accent {
   font-weight: 700;
   text-transform: capitalize;
@@ -236,6 +246,10 @@ ul {
 }
 .skills {
   margin-bottom: 25px;
+}
+.skills__title {
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
 }
 .skills__item {
   display: -webkit-box;
@@ -266,6 +280,8 @@ ul {
 }
 .skills__name, .skills__value {
   margin-bottom: 5px;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
 }
 .skills__name--rank {
   margin-bottom: 0;
@@ -280,6 +296,8 @@ ul {
   border: 1px solid #ffb400;
   border-radius: 3px;
   background-color: #ffffff;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
 }
 .skills__level::after {
   content: "";
@@ -331,7 +349,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 225px;
   height: 40px;
   font-size: 14px;
   font-weight: 600;
@@ -372,6 +390,8 @@ ul {
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
 }
 .hero__wrapper {
   padding-top: 25px;
@@ -382,12 +402,16 @@ ul {
   font-weight: 700;
   line-height: 1.2291666667;
   color: #767676;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
 }
 .hero__title--selection {
   color: #ffb400;
 }
 .hero__title--accent {
   color: #2b2b2b;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
 }
 .hero__subtitle {
   margin-bottom: 10px;
@@ -429,8 +453,53 @@ ul {
   fill: currentColor;
 }
 
-.education__item-text:not(:last-child) {
+.edu-n-work--final {
+  margin-bottom: 0;
+}
+.edu-n-work__title {
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+}
+.edu-n-work__subtitle--work {
+  margin-bottom: 25px;
+}
+.edu-n-work__wrapper {
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
+}
+.edu-n-work__wrapper--final {
+  margin-bottom: 0;
+}
+.edu-n-work__item-title {
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+}
+.edu-n-work__item-link {
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+}
+.edu-n-work__item-subtitle {
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+}
+.edu-n-work__item-text:not(:last-child) {
   margin-bottom: 10px;
+}
+.edu-n-work__get-cv-btn {
+  width: 225px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+}
+.edu-n-work__list {
+  padding-left: 20px;
+}
+.edu-n-work__list:last-of-type {
+  margin-bottom: 0;
+}
+.edu-n-work__list-item--header {
+  margin-left: -20px;
+  font-weight: 700;
+  list-style: none;
 }
 
 .wrapper-nav {
@@ -438,6 +507,8 @@ ul {
   min-width: 108px;
   height: inherit;
   background-color: #ffffff;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
 }
 
 .main-nav {
@@ -446,7 +517,6 @@ ul {
   right: 0;
   width: 108px;
   padding: 52px 34px;
-  background-color: #ffffff;
 }
 .main-nav__item {
   margin-bottom: 43px;
@@ -498,11 +568,15 @@ ul {
   background-color: #2b2b2b;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 250ms, opacity 250ms;
-  transition: visibility 250ms, opacity 250ms;
+  -webkit-transition: color 250ms, background-color 250ms, visibility 250ms, opacity 250ms;
+  transition: color 250ms, background-color 250ms, visibility 250ms, opacity 250ms;
 }
-.main-nav__link--contrast::before {
-  content: "Color Mode";
+.main-nav__link--dark-mode {
+  -webkit-transition: color 250ms, background-color 250ms;
+  transition: color 250ms, background-color 250ms;
+}
+.main-nav__link--dark-mode::before {
+  content: "Dark Mode";
 }
 .main-nav__link--home::before {
   content: "Home Page";
@@ -525,7 +599,7 @@ ul {
   height: 18px;
   fill: currentColor;
 }
-.main-nav__icon--contrast {
+.main-nav__icon--dark-mode {
   width: 25px;
   height: 25px;
 }/*# sourceMappingURL=main.css.map */
