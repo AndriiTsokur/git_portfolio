@@ -10,9 +10,13 @@ refs.navButtons.shift();
 
 window.addEventListener(
 	'scroll',
-	_.throttle(() => {
-		showActiveSection();
-	}, 250)
+	_.throttle(
+		() => {
+			showActiveSection();
+		},
+		300,
+		{ leading: false }
+	)
 );
 
 refs.darkModeBtn.addEventListener('click', activateDarkMode);
