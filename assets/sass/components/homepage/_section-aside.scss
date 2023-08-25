@@ -119,7 +119,6 @@
 	&__item {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		align-items: center;
 
 		font-size: 15px;
@@ -129,25 +128,33 @@
 			margin-bottom: 10px;
 		}
 
-		&--rank:not(:last-child),
-		&--extra:not(:last-child) {
-			margin-bottom: 5px;
+		&--lang {
+			justify-content: space-between;
 		}
 
-		&--extra {
-			justify-content: flex-start;
-			gap: 15px;
+		&--bullet::before {
+			content: '';
+			width: 15px;
+			height: 15px;
+			margin-right: 15px;
+
+			background-image: url('../../assets/img/icon-bullet.svg');
+		}
+
+		&--bullet:not(:last-child),
+		&--extra:not(:last-child) {
+			margin-bottom: 5px;
 		}
 	}
 
 	&__name,
 	&__value {
-		margin-bottom: 5px;
 		transition: color 250ms;
 	}
 
-	&__name--rank {
-		margin-bottom: 0;
+	&__name--lang,
+	&__value {
+		margin-bottom: 5px;
 	}
 
 	&__level {
@@ -186,33 +193,6 @@
 
 	&::after {
 		@extend %comp-subsection__separator;
-	}
-
-	&__rank {
-		display: flex;
-		gap: 5px;
-	}
-
-	&__star {
-		display: block;
-		width: 18px;
-		height: 18px;
-
-		fill: $COLOR_SELECTION;
-
-		&--empty {
-			fill: $COLOR_MAIN;
-			opacity: 0.3;
-		}
-	}
-
-	&__icon {
-		display: block;
-		width: 15px;
-		height: 15px;
-
-		fill: none;
-		stroke: $COLOR_SELECTION;
 	}
 }
 

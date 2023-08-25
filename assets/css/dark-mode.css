@@ -11,20 +11,20 @@ body {
 }
 
 .social__title,
-.hero__title,
-.hero__title--accent {
-	color: #ffffff;
-}
-
-.brief__value,
 .skills__title,
-.skills__name,
-.skills__value,
+.hero__title,
+.hero__title--accent,
 .edu-n-work__title,
 .edu-n-work__item-link,
 .edu-n-work__item-title,
 .edu-n-work__item-subtitle {
 	color: #fafafa;
+}
+
+.brief__value,
+.skills__name,
+.skills__value {
+	color: #767676;
 }
 
 .main-nav__link::before {
