@@ -1,5 +1,6 @@
 const refs = {
 	aside: document.querySelectorAll('aside'),
+	socialList: document.querySelector('.social__list'),
 	darkModeBtn: document.querySelector('.main-nav__link--dark-mode'),
 	navButtons: [...document.querySelectorAll('.main-nav__link')],
 	mainSections: document.querySelectorAll('main > section'),
@@ -20,6 +21,7 @@ window.addEventListener(
 );
 
 refs.darkModeBtn.addEventListener('click', activateDarkMode);
+refs.socialList.addEventListener('click', removeFocus);
 
 function showActiveSection() {
 	const currentBtnIdx = refs.navButtons.findIndex(button =>
@@ -56,4 +58,10 @@ function activateDarkMode(e) {
 	}
 
 	refs.darkModeBtn.classList.toggle('main-nav__link--current');
+	removeFocus(e);
+}
+
+function removeFocus(e) {
+	e.target.blur();
+	e.target.parentNode.blur();
 }
