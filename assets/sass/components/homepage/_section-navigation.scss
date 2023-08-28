@@ -10,9 +10,7 @@
 	transition: background-color 250ms;
 
 	@media screen and (min-width: 1440px) {
-		position: relative;
-		// top: a;
-		// right: none;
+		position: static;
 
 		width: 108px;
 		min-width: 108px;
@@ -26,14 +24,22 @@
 	top: 0;
 	right: 0;
 
-	// width: 108px;
 	padding-top: 30px;
 	padding-inline: 10px;
 
 	@media screen and (min-width: 1440px) {
-		// position: sticky;
+		position: relative;
+		top: 0;
+		right: 0;
+
 		width: 108px;
 		padding: 52px 34px;
+	}
+
+	&__list {
+		@media screen and (min-width: 1440px) {
+			position: fixed;
+		}
 	}
 
 	&__item {

@@ -5,6 +5,7 @@
 	overflow-x: hidden;
 
 	@media screen and (min-width: 1440px) {
+		// position: relative;
 		display: flex;
 		justify-content: space-between;
 		gap: 30px;
@@ -19,6 +20,7 @@
 	padding-left: 10px;
 
 	@media screen and (min-width: 1440px) {
+		width: auto;
 		padding: 0;
 	}
 }
