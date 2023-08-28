@@ -14,9 +14,13 @@ body {
 	line-height: calc(24 / 15);
 	color: $COLOR_MAIN;
 
-	background-color: $BG_MAIN;
+	background-color: $BG_BLOCK;
 
 	transition: background-color 250ms;
+
+	@media screen and (min-width: 1440px) {
+		background-color: $BG_MAIN;
+	}
 }
 
 button {

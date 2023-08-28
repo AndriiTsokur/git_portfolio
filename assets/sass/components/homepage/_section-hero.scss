@@ -1,85 +1,89 @@
 .hero {
 	@extend %comp-main-section;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	gap: 69px;
-	width: 100%;
-	padding: 18px 49px 0 60px;
+	display: none;
 
-	background-image: url('../img/homepage/hero__bg.svg');
-	background-color: $BG_BLOCK;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	transition: background-color 250ms;
-
-	&__wrapper {
-		// width: 495px;
-		padding-top: 25px;
-	}
-
-	&__title {
-		margin-bottom: 10px;
-
-		font-size: 48px;
-		font-weight: 700;
-		line-height: calc(59 / 48);
-		color: $COLOR_MAIN;
-
-		transition: color 250ms;
-
-		&--selection {
-			color: $COLOR_SELECTION;
-		}
-
-		&--accent {
-			color: $COLOR_ACCENT;
-			transition: color 250ms;
-		}
-	}
-
-	&__subtitle {
-		margin-bottom: 10px;
-
-		font-size: 16px;
-		line-height: calc(24 / 16);
-
-		&:last-of-type {
-			margin-bottom: 15px;
-		}
-	}
-
-	&__link {
+	@media screen and (min-width: 1440px) {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 150px;
-		height: 50px;
-		margin-bottom: 18px;
+		justify-content: space-between;
+		align-items: flex-end;
+		gap: 69px;
+		width: 100%;
+		padding: 18px 49px 0 60px;
 
-		font-size: 16px;
-		font-weight: 500;
-		line-height: calc(19 / 16);
-		color: $COLOR_ACCENT;
+		background-image: url('../img/homepage/hero__bg.svg');
+		background-color: $BG_BLOCK;
+		background-repeat: no-repeat;
+		background-size: cover;
 
-		border-radius: 5px;
-		background-color: $COLOR_SELECTION;
+		transition: background-color 250ms;
 
-		transition: color 250ms;
-
-		&:hover,
-		&:focus {
-			color: $BG_BLOCK;
+		&__wrapper {
+			// display: block;
+			padding-top: 25px;
 		}
-	}
 
-	&__icon {
-		width: 16px;
-		height: 16px;
-		margin-left: 9px;
+		&__title {
+			margin-bottom: 10px;
 
-		fill: currentColor;
+			font-size: 48px;
+			font-weight: 700;
+			line-height: calc(59 / 48);
+			color: $COLOR_MAIN;
+
+			transition: color 250ms;
+
+			&--selection {
+				color: $COLOR_SELECTION;
+			}
+
+			&--accent {
+				color: $COLOR_ACCENT;
+				transition: color 250ms;
+			}
+		}
+
+		&__subtitle {
+			margin-bottom: 10px;
+
+			font-size: 16px;
+			line-height: calc(24 / 16);
+
+			&:last-of-type {
+				margin-bottom: 15px;
+			}
+		}
+
+		&__link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 150px;
+			height: 50px;
+			margin-bottom: 18px;
+
+			font-size: 16px;
+			font-weight: 500;
+			line-height: calc(19 / 16);
+			color: $COLOR_ACCENT;
+
+			border-radius: 5px;
+			background-color: $COLOR_SELECTION;
+
+			transition: color 250ms;
+
+			&:hover,
+			&:focus {
+				color: $BG_BLOCK;
+			}
+		}
+
+		&__icon {
+			width: 16px;
+			height: 16px;
+			margin-left: 9px;
+
+			fill: currentColor;
+		}
 	}
 }

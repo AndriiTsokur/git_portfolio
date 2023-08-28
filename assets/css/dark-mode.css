@@ -2,12 +2,18 @@ body {
 	background-color: #18191a;
 }
 
-.general-info,
-.wrapper-nav,
-.hero,
-.edu-n-work__wrapper,
-.skills__level {
+.edu-n-work__wrapper {
 	background-color: #242526;
+}
+
+@media screen and (min-width: 1440px) {
+	.general-info,
+	.wrapper-nav,
+	.hero,
+	/* .edu-n-work__wrapper, */
+	.skills__level {
+		background-color: #242526;
+	}
 }
 
 .social__title,
