@@ -10,13 +10,12 @@ const refs = {
 };
 refs.navButtons.shift();
 
-console.log(refs.mainStyles);
-
 if (!localStorage.getItem(LOCAL_STORAGE_KEY)) {
 	localStorage.setItem(LOCAL_STORAGE_KEY, 'light');
 } else {
 	if (localStorage.getItem(LOCAL_STORAGE_KEY) === 'dark') {
 		activateDarkMode();
+		refs.darkModeBtn.classList.add('main-nav__link--current');
 	} else {
 		refs.mainStyles.nextElementSibling?.remove();
 	}
