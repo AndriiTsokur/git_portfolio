@@ -3,7 +3,8 @@ body {
 }
 
 .edu-n-work__wrapper {
-	background-color: #242526;
+	background-color: #18191a;
+	/* background-color: #242526; */
 }
 
 @media screen and (min-width: 1440px) {
